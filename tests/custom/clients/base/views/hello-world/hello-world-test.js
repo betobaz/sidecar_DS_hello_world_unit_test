@@ -80,6 +80,7 @@ ddescribe("Dashlet Hello World", function () {
 
 	it('Debe de tener Hello World', function (argument) {
 		expect(view).toBeTruthy()
+		view.render();
 		expect(view.$el.find('h1').html()).toContain("Hello World");
 	});
 });
